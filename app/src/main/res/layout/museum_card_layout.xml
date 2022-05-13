@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/museum_card"
+        android:layout_width="match_parent"
+        android:layout_height="322dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="11dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_edges">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edges"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <ImageView
+                android:id="@+id/museum_card_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/museum_garage_main_pic"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_edges">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/museum_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:textFontWeight="500"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <TextView
+                    android:id="@+id/museum_card_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/secondary_text"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="?android:attr/textColorSecondary" />
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_margin="8dp"-->
+            <!--            android:orientation="horizontal">-->
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginEnd="8dp"-->
+            <!--                android:text="@string/action_1"-->
+            <!--                style="?attr/borderlessButtonStyle"-->
+            <!--                />-->
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/action_2"-->
+            <!--                style="?attr/borderlessButtonStyle"-->
+            <!--                />-->
+            <!--        </LinearLayout>-->
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

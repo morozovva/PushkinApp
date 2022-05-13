@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <stroke
+                android:width="1dp"
+                android:color="#00FFFFFF"/>
+            <solid android:color="#00FFFFFF"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/scan_qr_pic"
+        android:bottom="10dp"
+        />
+</layer-list>

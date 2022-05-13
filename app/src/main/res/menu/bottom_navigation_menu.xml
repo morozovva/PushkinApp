@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_catalog"
+        android:enabled="true"
+        android:icon="@drawable/listicon"
+        android:title="@string/bnm_list"/>
+    <item
+        android:id="@+id/nav_search"
+        android:enabled="true"
+        android:icon="@drawable/searchicon"
+        android:title="@string/bnm_search"/>
+    <item
+        android:id="@+id/nav_map"
+        android:enabled="true"
+        android:icon="@drawable/mapicon"
+        android:title="@string/bnm_map"/>
+</menu>
