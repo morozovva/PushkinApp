@@ -6,10 +6,10 @@
 
 Основныен зависимости проекта включают в себя зависимости, необходимые для обеспечения стандартного функционала любого приложения на Android. 
 Так же добавлены 2 зависимости, позволяющие пользователю пользоваться картой или камерой со считывателем QR-кода.
+
 dependencies {
     implementation 'com.github.yuriy-budiyev:code-scanner:2.1.2'
     implementation 'com.yandex.android:maps.mobile:4.0.0-lite'
-    
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
