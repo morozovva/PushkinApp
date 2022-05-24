@@ -92,31 +92,6 @@ public class MuseumSharedViewModel extends ViewModel {
         return mutableList;
     }
 
-//    private void search(String text) {
-//        ArrayList<MuseumCatalogItem> filteredlist = new ArrayList<>();
-//        getSearchList = viewModel.getMuseumMutableLiveData().getValue();
-//
-//        for (MuseumCatalogItem item : getSearchList) {
-//            if ((item.getTitle().toLowerCase().contains(text.toLowerCase()))
-////                    || (item.getSecondary().toLowerCase().contains(text.toLowerCase()))
-//            ) {
-//                filteredlist.add(item);
-//            }
-//        }
-//        viewModel.getMuseumMutableLiveData().observe(getViewLifecycleOwner(), museumListUpdateObserver);
-//        adapter = new MuseumRecyclerViewAdapter(filteredlist);
-//        adapter.setListener((v, position) -> {
-//            viewModel.setSelected(adapter.getItemAt(position));
-//            getParentFragmentManager().beginTransaction()
-//                    .replace(R.id.container, museumCardFragment)
-//                    .addToBackStack(null)
-//                    .commit();
-//            getActivity().findViewById(R.id.bottom_navigation).setVisibility(View.GONE);
-//        });
-//    }
-
-
-
     private Integer expoSelectedIndex;
     private final MutableLiveData<ExpoCatalogItem> expoSelected = new MutableLiveData<>();
     private final MutableLiveData<List<ExpoCatalogItem>> expoMutableData = new MutableLiveData<>();
