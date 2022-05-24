@@ -1,0 +1,8 @@
+com.example.pushkinapp
+com.example.pushkinapp.adapter
+com.example.pushkinapp.bottom_sheet
+com.example.pushkinapp.model
+com.example.pushkinapp.repository
+com.example.pushkinapp.ui
+com.example.pushkinapp.view
+com.example.pushkinapp.viewmodel
