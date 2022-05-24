@@ -43,7 +43,8 @@ public class FilteringBottomSheet extends BottomSheetDialogFragment {
         isCheckedSecond = settings.getBoolean("isCheckedSecond", false);
         isCheckedThird = settings.getBoolean("isCheckedThird", false);
     }
-
+    
+    //проверка выставленных настроек пользователя
     public static boolean checkFirstCheckbox(){
         if (firstCheckBox == null) {
             return false;
@@ -76,9 +77,9 @@ public class FilteringBottomSheet extends BottomSheetDialogFragment {
         thirdCheckBox = v.findViewById(R.id.third_checkbox);
         revertButton = v.findViewById(R.id.revert_button);
 
-        firstCheckBox.setChecked(isCheckedFirst);
-        secondCheckBox.setChecked(isCheckedSecond);
-        thirdCheckBox.setChecked(isCheckedThird);
+        firstCheckBox.setChecked(isCheckedFirst); //первое условие фильтрации
+        secondCheckBox.setChecked(isCheckedSecond); //второе условие фильтрации
+        thirdCheckBox.setChecked(isCheckedThird); //третье условие фильтрации
 
         firstCheckBox.setOnClickListener(
                 (buttonView) -> {
