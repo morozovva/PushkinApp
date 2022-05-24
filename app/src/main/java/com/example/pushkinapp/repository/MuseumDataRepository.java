@@ -17,7 +17,7 @@ public class MuseumDataRepository {
    }
    public static List<MuseumCatalogItem> museumCatalogItemList = populateItems();
 
-   public static List<MuseumCatalogItem> populateItems()
+   public static List<MuseumCatalogItem> populateItems() //наполнение базы данных
    {
        List<MuseumCatalogItem> museumCatalogItem = new ArrayList<>();
 
