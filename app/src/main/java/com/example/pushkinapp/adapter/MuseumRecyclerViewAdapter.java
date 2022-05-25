@@ -52,42 +52,6 @@ public class MuseumRecyclerViewAdapter extends RecyclerView.Adapter<MuseumRecycl
         holder.binding.museumCardImage.setImageResource(list.get(position).getImgid());
     }
 
-//    public void filter(ViewHolder holder, int position){
-//        params.height = 0;
-//        if (FilteringBottomSheet.checkFirstCheckbox()){
-//            if (list.get(position).getPrice()>=300){
-//                holder.itemView.setLayoutParams(params);
-//            }
-//        }
-//        else{
-//            holder.itemView.setLayoutParams(new ViewGroup.LayoutParams(
-//                    ViewGroup.LayoutParams.MATCH_PARENT,
-//                    ViewGroup.LayoutParams.WRAP_CONTENT));
-//
-//            holder.itemView.setVisibility(View.VISIBLE);
-////            holder.itemView.setLayoutParams();
-//        }
-//        if (FilteringBottomSheet.checkSecondCheckbox()){
-//            if ((list.get(position).getPrice()<=300) || (list.get(position).getPrice()>=600)){
-//                holder.itemView.setLayoutParams(params);
-//            }
-//        }
-//        else{
-//            holder.itemView.setVisibility(View.VISIBLE);
-////            holder.itemView.setLayoutParams();
-//        }
-//        if (FilteringBottomSheet.checkThirdCheckbox()){
-//            if (list.get(position).getPrice()<=600){
-//                holder.itemView.setLayoutParams(params);
-//            }
-//        }
-//        else{
-//            holder.itemView.setVisibility(View.VISIBLE);
-////            holder.itemView.setLayoutParams();
-//        }
-//    }
-
-
     @Override
     public int getItemCount() {
         return list.size();
