@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_main">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/back_button" />
+
+        <ImageView
+            android:id="@+id/expo_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/expo_sample"
+
+            />
+
+        <FrameLayout
+            android:id="@+id/expo_frame"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toBottomOf="@+id/expo_pic"
+            android:background="@color/blue_main">
+
+            <TextView
+                android:id="@+id/expo_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paweł Althamer. Silence"
+                android:background="@color/blue_main"
+                android:textSize="20dp"
+                android:textFontWeight="600"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_main" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/make_circle"
+
+            app:layout_constraintTop_toBottomOf="@id/expo_frame"
+
+            >
+
+            <SeekBar
+                android:id="@+id/audio_line"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressTint="@color/dark_main"
+                android:thumbTint="@color/dark_main"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="160dp"
+                android:layout_marginRight="5dp"
+                android:progress="0" />
+
+            <Button
+                android:id="@+id/play_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/play_icon" />
+
+            <Button
+                android:id="@+id/pause_button"
+                android:layout_width="23dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="46dp"
+                android:background="@drawable/pause_icon" />
+
+            <TextView
+                android:id="@+id/start_time_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="00:00"
+                android:textColor="@color/dark_main"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:id="@+id/finish_time_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="117dp"
+                android:text="/00:00"
+                android:textColor="@color/dark_main"
+                android:layout_gravity="center_vertical" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="430dp"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_marginBottom="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/expo_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Информация об экспонате"
+                    android:textFontWeight="600"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue_main"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:id="@+id/expo_info_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/blue_main"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="1dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

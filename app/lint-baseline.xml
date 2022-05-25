@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.1.1" type="baseline" client="gradle" dependencies="false" name="AGP (7.1.1)" variant="fatal" version="7.1.1">
+
+    <issue
+        id="Instantiatable"
+        message="`ExpoPageFragment` must extend android.app.Activity"
+        errorLine1="            android:name=&quot;.view.ExpoPageFragment&quot;"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="60"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="NotSibling"
+        message="`@+id/expo_name` is not a sibling in the same `ConstraintLayout`"
+        errorLine1="            app:layout_constraintTop_toBottomOf=&quot;@+id/expo_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/expo_page.xml"
+            line="120"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="NotSibling"
+        message="`@+id/museum_name` is not a sibling in the same `ConstraintLayout`"
+        errorLine1="            app:layout_constraintTop_toBottomOf=&quot;@+id/museum_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/museum_page.xml"
+            line="71"
+            column="13"/>
+    </issue>
+
+</issues>

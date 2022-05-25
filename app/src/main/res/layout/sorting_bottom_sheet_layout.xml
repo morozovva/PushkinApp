@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/dark_main"
+        android:padding="16dp"
+        style="@style/forsortingtoroundedges">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сортировать"
+                android:textSize="18sp"
+                android:textColor="@color/blue_extra"
+                android:textFontWeight="600"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/sorting_revert_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отмена"
+                android:textSize="18sp"
+                android:textColor="@color/blue_main"
+                android:textFontWeight="600"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="right"
+                android:textAllCaps="false"
+                android:gravity="center_horizontal"
+                android:background="@color/dark_main"
+                android:layout_marginRight="28dp" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/popular_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border_top_bottom"
+            android:text="по популярности"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_main" />
+
+        <Button
+            android:id="@+id/alphabet_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border_top_bottom"
+            android:text="по алфавиту"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_main" />
+
+        <Button
+            android:id="@+id/closure_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_top_bottom"
+            android:text="по близости"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_main" />
+
+    </LinearLayout>
+</layout>

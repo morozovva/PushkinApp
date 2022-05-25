@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/dark_main"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фильтры"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textFontWeight="600"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/revert_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отмена"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:gravity="center_horizontal"
+                android:textColor="@color/blue_main"
+                android:textFontWeight="600"
+                android:background="@color/dark_main"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="right"
+                android:layout_marginRight="28dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Стоимость билета"
+                android:textSize="16sp"
+                android:textColor="@color/blue_extra"
+                android:textFontWeight="600"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp" />
+
+            <CheckBox
+                android:id="@+id/first_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:buttonTint="@color/white"
+                android:background="@drawable/border_top_bottom"
+                android:textColor="@color/white"
+                android:text="     до 300 рублей"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textFontWeight="600"
+                android:fontFamily="sans-serif"
+
+                />
+
+            <CheckBox
+                android:id="@+id/second_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:background="@drawable/border_top_bottom"
+                android:textColor="@color/white"
+                android:text="     300-600 рублей"
+                android:buttonTint="@color/white"
+                android:layout_marginTop="68dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textFontWeight="600"
+                android:fontFamily="sans-serif"
+                style="@style/ThemeOverlay.App.CheckBox"
+                />
+
+            <CheckBox
+                android:id="@+id/third_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:background="@drawable/border_top_bottom"
+                android:textColor="@color/white"
+                android:text="     от 600 рублей"
+                android:buttonTint="@color/white"
+                android:layout_marginTop="116dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textFontWeight="600"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="30dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

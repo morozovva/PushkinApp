@@ -1,0 +1,67 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_main">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+
+
+            android:paddingTop="160dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_field" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/dark_main">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="sans-serif"
+                android:text="Поиск"
+                android:textColor="@color/blue_main"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_field"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            android:background="@drawable/rounded_edges"
+            app:showAsAction="ifRoom|collapseActionView"
+            app:iconifiedByDefault="true"
+            android:animateLayoutChanges="true"
+            app:queryHint="Найти..."
+            android:layoutDirection="rtl"
+            app:queryBackground="@android:color/transparent"
+            android:paddingRight="18dp"
+            app:searchIcon="@drawable/searchicon"
+            android:layout_gravity="center_vertical"
+            >
+        </androidx.appcompat.widget.SearchView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
