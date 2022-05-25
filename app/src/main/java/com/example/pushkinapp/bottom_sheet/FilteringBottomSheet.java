@@ -27,8 +27,6 @@ public class FilteringBottomSheet extends BottomSheetDialogFragment {
     private static Boolean isCheckedSecond;
     private static Boolean isCheckedThird;
 
-//    CatalogFragment catalogFragment = new CatalogFragment();
-
     @Override
     public void dismissAllowingStateLoss() {
         settings.edit().clear().commit();
@@ -84,31 +82,20 @@ public class FilteringBottomSheet extends BottomSheetDialogFragment {
         firstCheckBox.setOnClickListener(
                 (buttonView) -> {
                     settings.edit().putBoolean("isCheckedFirst", !isCheckedFirst).commit();
-//                    CatalogFragment.adapter.
-//                    if (checkFirstCheckbox()){
-                        CatalogFragment.adapter.setNewList(CatalogFragment.getViewModel().getfilter().getValue());
+                    CatalogFragment.adapter.setNewList(CatalogFragment.getViewModel().getfilter().getValue());
                     CatalogFragment.returnAdapter().notifyDataSetChanged();
-//                    }
-//                    CatalogFragment.returnAdapter().notifyDataSetChanged();
-//                    CatalogFragment.getViewModel().getMuseumMutableLiveData();
                 });
         secondCheckBox.setOnClickListener(
                 (buttonView) -> {
                     settings.edit().putBoolean("isCheckedSecond", !isCheckedSecond).commit();
                     CatalogFragment.adapter.setNewList(CatalogFragment.getViewModel().getfilter().getValue());
                     CatalogFragment.returnAdapter().notifyDataSetChanged();
-////                    CatalogFragment.getViewModel().getfilter();
-//                    CatalogFragment.adapter.setNewList(CatalogFragment.getViewModel().getfilter().getValue());
-//                    CatalogFragment.returnAdapter().notifyDataSetChanged();
-//                    CatalogFragment.getViewModel().getMuseumMutableLiveData();
-//                    CatalogFragment.getViewModel().getMuseumMutableLiveData();
                 });
         thirdCheckBox.setOnClickListener(
                 (buttonView) -> {
                     settings.edit().putBoolean("isCheckedThird", !isCheckedThird).commit();
                     CatalogFragment.adapter.setNewList(CatalogFragment.getViewModel().getfilter().getValue());
                     CatalogFragment.returnAdapter().notifyDataSetChanged();
-//                    CatalogFragment.returnAdapter().notifyDataSetChanged();
                 });
         setUpRevertButton();
         return v;
